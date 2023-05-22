@@ -6,8 +6,6 @@
 <script src="https://www.google.com/recaptcha/api.js?render=6LfZ-x8mAAAAAMTOKGK8tNdZmf4ElozDfqA0Fw11"></script>
 
    <script>
-      function onClick(e) {
-        e.preventDefault();
         grecaptcha.ready(function() {
           grecaptcha.execute('6LfZ-x8mAAAAAMTOKGK8tNdZmf4ElozDfqA0Fw11', {action: 'submit'}).then(function(token) {
               window.parent.postMessage(JSON.stringify({
@@ -20,7 +18,7 @@
             }), '*');
           });
         });
-      }
+      
   </script>
   
 </body>
